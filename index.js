@@ -1,12 +1,18 @@
-var Twitter = require('twitter');
-var axios = require('axios');
-var config = require('./keys.js');
-var T = new Twit(config);
+require('dotenv').config()
+const Twit = require('twit');
+/* var Twitter = require('twitter'); */
 
+var T = new Twit ({
+    consumer_key: process.env.TWIT_CONSUMER_KEY,
+    consumer_secret: process.env.TWIT_CONSUMER_SECRET,
+    access_token: process.env.TWIT_ACCESS_TOKEN,
+    access_token_secret: process.env.TWIT_ACCESS_TOKEN_SECRET
+});
 
-var T = new Twit({
-    consumer_key:         'YOURCONSUMERKEY',
-    consumer_secret:      'YOURCONSUMERSECRET',
-    access_token:         'YOURACCESSTOKEN',
-    access_token_secret:  'YOURACCESSTOKENSECRET'
-  });
+var postBasketball = () => { T.post('statuses/update', {status: "🏀"}, function(err, data, response) {
+    console.log(data)
+    }); 
+};
+
+postBasketball();
+    

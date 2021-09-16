@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +13,8 @@
   "dependencies": {
     "dotenv": "^10.0.0",
     "node-static": "^0.7.11",
+    "q": "^1.5.1",
+    "request": "^2.88.2",
     "twit": "^2.2.11",
     "twitter": "^1.7.1"
   }

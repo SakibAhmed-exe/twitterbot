@@ -9,3 +9,5 @@ Log in to your twitter account.
 Goto @allballbot
 
 View the scheduled tweets.
+
+Currently not hosted anywhere

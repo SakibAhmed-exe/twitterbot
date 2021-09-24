@@ -1,13 +1,9 @@
 
-A twitter bot that replies to a given input tweet.
+# AllBallBot
+This is a twitter bot that is able to send out tweets and reply to mentions with a tweet about Basketball. It was hosted via Heroku, but is currentlty **not** live.
 
-
-To view the bot: 
-
-Log in to your twitter account.
-
+# To View
+Log in to your twitter account
 Goto @allballbot
+View the posted tweets
 
-View the scheduled tweets.
-
-Currently not hosted anywhere
